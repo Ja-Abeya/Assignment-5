@@ -1,0 +1,24 @@
+while True:
+    word_input = input("Enter two words separated by a space (or 'done' to exit): ").strip()
+
+    if not word_input:
+        print("No input provided. Exiting...")
+        break
+
+    words = word_input.split()
+
+    if len(words) == 1:
+        print("Only one word entered:", words[0])
+    elif len(words) == 2:
+        word1, word2 = words
+        if word1 < word2:
+            print("Word that comes before in lexicographical order:", word1)
+        elif word2 < word1:
+            print("Word that comes before in lexicographical order:", word2)
+        else:
+            print("Both words are the same.")
+    elif words[0].lower() == 'done':
+        print("Exiting...")
+        break
+    else:
+        print("Invalid input. Please enter two words separated by a space.")
