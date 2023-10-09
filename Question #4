@@ -1,0 +1,15 @@
+while True:
+    input_string = input("Enter a string (type 'done' to exit): ")
+
+    if input_string.lower() == 'done':
+        print("Exiting...")
+        break
+
+    # Remove special characters , . : ! ?
+    special_characters = ",.!:?"
+    processed_string = input_string.translate(str.maketrans('', '', special_characters))
+
+    # Convert to uppercase
+    processed_string = processed_string.upper()
+
+    print("Processed string:", processed_string)
