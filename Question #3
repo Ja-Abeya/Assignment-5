@@ -24,3 +24,4 @@ print("Number of lowercase letters:", lower_count)
 print("Number of other characters:", other_count)
 
 
+
