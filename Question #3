@@ -23,4 +23,3 @@ print("Number of numbers:", num_count)
 print("Number of uppercase letters:", upper_count)
 print("Number of lowercase letters:", lower_count)
 print("Number of other characters:", other_count)
-
