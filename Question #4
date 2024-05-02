@@ -13,3 +13,4 @@ while True:
     processed_string = processed_string.upper()
 
     print("Processed string:", processed_string)
+
