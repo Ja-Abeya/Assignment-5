@@ -14,4 +14,3 @@ while True:
 
     print("Processed string:", processed_string)
 
-
